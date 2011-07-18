@@ -1,0 +1,20 @@
+{
+  "name": "ncss",
+  "description": "CSS stream compressor",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kurakin/ncss.git"
+  },
+  "author": "Wil Asche",
+  "main": "ncss",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

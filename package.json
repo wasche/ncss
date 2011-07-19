@@ -9,7 +9,10 @@
                   },
   "keywords"    : [ "css", "compress", "minify", "minification", "minifier" ],
   "author"      : "Wil Asche",
-  "licenses"    : "MIT",
+  "licenses"    : [{
+                    "type": "MIT",
+                    "url": "https://github.com/kurakin/ncss/raw/master/LICENSE"
+                  }],
   "bin"         : "bin/ncss",
   "main"        : "lib/ncss",
   "directories" : { "lib": "lib" },

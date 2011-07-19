@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var path  = require('path'),
+    fs    = require('fs'),
+    ncss  = require('../lib/ncss'),
+    buf;
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('data', function(chunk){
+  process.stdout.write(ncss(chunk));
+});
+
+if (buf && buf.length > 0) process.stdout.write(buf);

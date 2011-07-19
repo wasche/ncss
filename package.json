@@ -1,20 +1,18 @@
 {
-  "name": "ncss",
-  "description": "CSS stream compressor",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kurakin/ncss.git"
-  },
-  "author": "Wil Asche",
-  "main": "ncss",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "engines": {
-    "node": "*"
-  }
+  "name"        : "ncss",
+  "version"     : "1.0.0",
+  "description" : "CSS stream compressor",
+  "homepage"    : "https://github.com/kurakin/ncss",
+  "repository"  : {
+                    "type": "git",
+                    "url": "git://github.com/kurakin/ncss.git"
+                  },
+  "keywords"    : [ "css", "compress", "minify", "minification", "minifier" ],
+  "author"      : "Wil Asche",
+  "licenses"    : [ "MIT" ],
+  "bin"         : "bin/ncss",
+  "main"        : "lib/ncss",
+  "directories" : { "lib": "lib" },
+  "scripts"     : { "test": "make test" },
+  "engines"     : { "node": "*" }
 }

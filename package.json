@@ -9,7 +9,7 @@
                   },
   "keywords"    : [ "css", "compress", "minify", "minification", "minifier" ],
   "author"      : "Wil Asche",
-  "licenses"    : [ "MIT" ],
+  "licenses"    : "MIT",
   "bin"         : "bin/ncss",
   "main"        : "lib/ncss",
   "directories" : { "lib": "lib" },

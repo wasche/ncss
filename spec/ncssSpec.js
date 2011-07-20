@@ -38,6 +38,8 @@ describe("test minification", function() {
       .toEqual("a{margin:0;background-position:0 0;padding:0}");
     expect(ncss("#id pre {margin: 0 0px;padding: 0pt 0 0;}"))
       .toEqual("#id pre{margin:0;padding:0}");
+    expect(ncss("a{background-position: 0 0 0 0;}"))
+      .toEqual("a{background-position:0 0}");
   });
 
   it("should drop the leading 0 for floats < 1", function() {
@@ -107,6 +109,11 @@ describe("test minification", function() {
       .toEqual("@media screen and (min-width:1024px){.container{width:960px}}");
     expect(ncss("@media screen and (max-width: 699px) and (min-width: 520px){ body { background: #ccc } }"))
       .toEqual("@media screen and (max-width:699px) and (min-width:520px){body{background:#ccc}}");
+  });
+
+  it("should not lower case on rules in media blocks", function() {
+    expect(ncss("@media screen { #FeedbackMailForm{ PADDING: 0;}}"))
+      .toEqual("@media screen{#FeedbackMailForm{padding:0}}");
   });
 
 });

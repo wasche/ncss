@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 
-var ncss = require('../lib/ncss'),
-    buf;
+var ncss = require('../lib/minify'),
+    buf = '';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
-process.stdin.on('data', function(chunk){
-  process.stdout.write(ncss(chunk));
+process.stdin.on('data', function(chunk) {
+  buf += chunk;
 });
 
-if (buf && buf.length > 0) process.stdout.write(buf);
+process.stdin.on('end', function() {
+  process.stdout.write(ncss(buf));
+});
+

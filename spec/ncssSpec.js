@@ -116,4 +116,14 @@ describe("test minification", function() {
       .toEqual("@media screen{#FeedbackMailForm{padding:0}}");
   });
 
+  it("should handle adjacent selector", function() {
+    expect(ncss("#menu a+a { color: blue; }"))
+      .toEqual("#menu a+a{color:blue}");
+  });
+
+  it("shouldn't care about unnecessary spaces", function() {
+    expect(ncss("#menu a{color:blue}"))
+      .toEqual("#menu a{color:blue}");
+  });
+
 });

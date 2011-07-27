@@ -27,6 +27,9 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
+    table td { text-align:right; }
+    table td.t { text-align:left; }
   </style>
 </head>
 
@@ -50,15 +53,19 @@
     </div>
 
     <h2>Dependencies</h2>
-<p>node</p>
-<h2>Install</h2>
-<p>npm install ncss</p>
-<h2>License</h2>
-<p>MIT</p>
-<h2>Authors</h2>
-<p>Wil Asche (wil@wickedspiral.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Wil Asche (wil@wickedspiral.com)<br/>      </p>
+    <p>node</p>
+
+    <h2>Install</h2>
+    <p>npm install ncss</p>
+
+    <h2>License</h2>
+    <p>MIT</p>
+    
+    <h2>Authors</h2>
+    <p>Wil Asche (wil@wickedspiral.com)<br/><br/>      </p>
+    
+    <h2>Contact</h2>
+    <p>Wil Asche (wil@wickedspiral.com)<br/>      </p>
 
 
     <h2>Download</h2>
@@ -71,6 +78,59 @@
       by running:
       <pre>$ git clone git://github.com/kurakin/ncss</pre>
     </p>
+
+    <h2>Benchmarks</h2>
+    <p>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>file</th>
+          <th>size</th>
+          <th>lines</th>
+          <th>ncss</th>
+          <th>py-css</th>
+          <th>yui 2.4.2</th>
+          <th>yui 2.4.6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class=t>home-gen.css</td>
+          <td>47509</td>
+          <td>721</td>
+          <td>130</td>
+          <td>310</td>
+          <td>630</td>
+          <td>690</td>
+        </tr>
+        <tr>
+          <td class=t>universal-gen.css</td>
+          <td>285805</td>
+          <td>5446</td>
+          <td>1390</td>
+          <td>1490</td>
+          <td>1110</td>
+          <td>1920</td>
+        </tr>
+        <tr>
+          <td class=t>smartdeals-gen.css</td>
+          <td>314596</td>
+          <td>5446</td>
+          <td>1690</td>
+          <td>1680</td>
+          <td>1170</td>
+          <td>1870</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan=7>
+            ncss v1.0.2, <a href="http://github.com/tripadvisor/py-css">py-css</a> v0.1,
+            times are in ms to nearest 10<sup>th</sup>.
+            Measured in k-time where k=3 on a MBP i5@2.4GHz.
+          </td>
+    </table>
 
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/kurakin/ncss">kurakin/ncss</a>

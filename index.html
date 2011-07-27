@@ -28,8 +28,11 @@
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 
+    table th,
     table td { text-align:right; }
+    table th.t,
     table td.t { text-align:left; }
+    table tfoot td { text-align:center; font-size: .875em; }
   </style>
 </head>
 
@@ -85,7 +88,7 @@
     <table>
       <thead>
         <tr>
-          <th>file</th>
+          <th class=t>file</th>
           <th>size</th>
           <th>lines</th>
           <th>ncss</th>

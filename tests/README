@@ -1,9 +1,0 @@
-Y!UI Compressor test suite
-from https://github.com/yui/yuicompressor/tests
-
-To add a test:
-
-1. Create a "blah.css" file.
-2. Create a "blah.css.min" file, containing the expected minified output.
-
-That's all!

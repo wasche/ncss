@@ -3,7 +3,7 @@ ncss
 This node.js module is a streaming compressor for CSS. Unlike other CSS minifiers
 it works on a stream and is optimized for speed.
 
-[![Still Maintained](http://stillmaintained.com/meskyanichi/backup.png)](http://stillmaintained.com/meskyanichi/backup)
+[![Still Maintained](http://stillmaintained.com/kurakin/backup.png)](http://stillmaintained.com/kurakin/ncss)
 
 installation
 ------------

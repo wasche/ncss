@@ -24,3 +24,7 @@ ncss also comes with middleware for connect. See examples for more advanced usag
 
     var pub = __dirname + '/public';
     connect.createServer(ncss.middleware(pub), connect.static(pub)).listen(3000);
+
+## Matching Output of Y!UI Compressor
+
+For Y!UI Compressor 2.4.2, use: ```--keep-trailing-semicolons --no-collapse-zeroes --no-collapse-none```

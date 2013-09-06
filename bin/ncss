@@ -1,7 +1,24 @@
 #!/usr/bin/env node
 
-var ncss = require('../lib/minify'),
-    buf = '';
+var ncss = require('../lib/minify')
+  , args = process.argv.slice(2)
+  , ops = {}
+  , buf = ''
+  ;
+
+while (args.length){
+  switch (args.shift()){
+    case '--keep-trailing-semicolons':
+      ops.keepTrailingSemicolons = true;
+      break;
+    case '--no-collapse-zeroes':
+      ops.noCollapseZeroes = true;
+      break;
+    case '--no-collapse-none':
+      ops.noCollapseNone = true;
+      break;
+  }
+}
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
@@ -11,6 +28,6 @@ process.stdin.on('data', function(chunk) {
 });
 
 process.stdin.on('end', function() {
-  process.stdout.write(ncss(buf));
+  process.stdout.write(ncss(buf, ops));
 });
 

@@ -1,17 +1,14 @@
-ncss
-====
+# ncss [![NPM version](https://badge.fury.io/js/ncss.png)](http://badge.fury.io/js/ncss)[![Still Maintained](http://stillmaintained.com/wasche/ncss.png)](http://stillmaintained.com/wasche/ncss)
+
 This node.js module is a streaming compressor for CSS. Unlike other CSS minifiers
 it works on a stream and is optimized for speed.
 
-[![NPM version](https://badge.fury.io/js/ncss.png)](http://badge.fury.io/js/ncss)
-[![Still Maintained](http://stillmaintained.com/wasche/ncss.png)](http://stillmaintained.com/wasche/ncss)
+## installation
 
-installation
-------------
     npm install ncss
 
-usage
------
+## usage
+
     var ncss = require('ncss');
     var min = ncss('.selector { background: black; }');
 
@@ -19,8 +16,8 @@ or
 
     ncss < input_file > output_file
 
-Using ncss with Connect or Express
-----
+## Using ncss with Connect or Express
+
 ncss also comes with middleware for connect. See examples for more advanced usage.
 
     var pub = __dirname + '/public';

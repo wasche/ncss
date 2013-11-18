@@ -4,7 +4,7 @@ This node.js module is a streaming compressor for CSS. Unlike other CSS minifier
 it works on a stream and is optimized for speed.
 
 [![NPM version](https://badge.fury.io/js/ncss.png)](http://badge.fury.io/js/ncss)
-[![Still Maintained](http://stillmaintained.com/wasche/backup.png)](http://stillmaintained.com/wasche/ncss)
+[![Still Maintained](http://stillmaintained.com/wasche/ncss.png)](http://stillmaintained.com/wasche/ncss)
 
 installation
 ------------
